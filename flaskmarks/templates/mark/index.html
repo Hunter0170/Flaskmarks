@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container" role="main">
+        {% include "flash.html" %}
+        {% if marks.items %}
+            {% include "mark/list.html" %}
+        {% else %}
+            <h3>No marks found...</h3>
+        {% endif %}
+    </div>
+{% endblock %}
